@@ -1,0 +1,57 @@
+<html>
+<head>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script>
+document.getElementById("#emailid").disabled=true;
+function check() {
+  if($("#fname").lenght>0 && $("#lname").lenght>0) {
+    $("#emailid").prop('disabled', false);
+  }
+
+</script>
+</head>
+<body>
+    <div class="container col-md-6 p-3 my-3 ">
+        <div class="col-md-6 bg-white text-left rounded shadow ">
+    <form>
+        <div class="form-group" >
+          <label for="fname">First Name</label>
+          <input type="text" class="form-control" id="fname" aria-describedby="fname" onkeyup='check()' required>
+         
+        </div>
+        <div class="form-group" >
+            <label for="lname">Last Name</label>
+            <input type="text" class="form-control" id="lname" aria-describedby="lname" onkeyup='check()' required>
+           
+          </div>
+          <div class="form-group" >
+            <label for="emailid">Email Id</label>
+            <input type="email" class="form-control" id="emailid" aria-describedby="emailid" required>
+           
+          </div>
+          <div class="form-group" >
+            <label for="phone">Phone No.</label>
+            <input type="number" class="form-control" id="phone" aria-describedby="phone" required>
+           
+          </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" class="form-control" id="dob" aria-describedby="dob" required>
+        </div>
+        <div class="form-group">
+            <label for="pass">Password</label>
+            <input type="password" class="form-control" id="pass" required>
+          </div>
+
+       
+       
+        <button type="submit" class="btn btn-success btn-lg my-2  ">Register</button>
+      </form>
+    </div>
+</div>
+
+</body>
+</html>
